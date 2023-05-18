@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Practika
@@ -14,7 +15,7 @@ namespace Practika
             int i = 0;
             Console.WriteLine("Введите текст:");
             txt = Console.ReadLine();
-            Console.WriteLine("Выберите вариант: \n1. Перевернуть текст \n2. Посчитать кол-во гласных");
+            Console.WriteLine("Выберите вариант: \n1. Перевернуть текст \n2. Посчитать кол-во гласных\n3. Удалить согласные буквы ");
             i = Convert.ToInt32(Console.ReadLine());
             switch (i)
             {
@@ -26,6 +27,10 @@ namespace Practika
                     case 2:
                     int znach = secondpice(txt);
                     Console.WriteLine("Кол-во глассных = " + znach);
+                    break;
+                case 3:
+                    lasttxt = thirdpice(txt);
+                    Console.WriteLine(lasttxt);
                     break;
             }
             
@@ -46,6 +51,11 @@ namespace Practika
                     if (a[i] == glas_lett[j])
                         ++cnt;
             return cnt;
+        }
+        static string thirdpice( string a)
+        {
+            a = Regex.Replace(a, "[ЙйЦцКкНнГгШшЩщЗзХхФфВвПпРрЛлДдЖжЧчСсМмТтБбQqWwRrTtYyPpSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm]", "");
+            return a;
         }
     }
 }

@@ -1,0 +1,8 @@
+Z:\Миапо пр\Project1\Practika\bin\Debug\Practika.exe.config
+Z:\Миапо пр\Project1\Practika\bin\Debug\Practika.exe
+Z:\Миапо пр\Project1\Practika\bin\Debug\Practika.pdb
+Z:\Миапо пр\Project1\Practika\obj\Debug\Practika.csproj.AssemblyReference.cache
+Z:\Миапо пр\Project1\Practika\obj\Debug\Practika.csproj.SuggestedBindingRedirects.cache
+Z:\Миапо пр\Project1\Practika\obj\Debug\Practika.csproj.CoreCompileInputs.cache
+Z:\Миапо пр\Project1\Practika\obj\Debug\Practika.exe
+Z:\Миапо пр\Project1\Practika\obj\Debug\Practika.pdb
